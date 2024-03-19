@@ -1,0 +1,165 @@
+#main
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div1{
+  min-height: 90vh;
+}
+#div1,
+#div2 
+{
+  min-height: 50vh;
+  padding: 1rem;
+  /* margin-top: 1rem; */
+  margin-right: 1rem;
+  width: 20rem;
+  border: 1px solid black;
+}
+
+.container 
+{
+  display: flex;
+  padding: 0px !important;
+}
+
+.block
+{
+  height: 90px;  
+  
+}
+
+.block{
+  width: 33.3%; 
+  height: 100px;  
+  background-color: lightblue; 
+  border: 1px solid black;  
+  /* resize: both;  */
+  overflow: auto; 
+}
+
+.block2
+{
+  width: 50%; 
+  height: 100px;  
+  background-color: lightblue; 
+  border: 1px solid black;  
+  /* resize: both;  */ 
+  overflow: auto; 
+}
+
+.block1
+{
+  width: 100%; 
+  height: 100px; 
+  background-color: lightblue; 
+  border: 1px solid black;  
+  /* resize: both;  */
+  overflow: auto; 
+}
+
+.block4{
+  width: 25%;
+  height: 100px; 
+  background-color: lightblue; 
+  border: 1px solid black;  
+  /* resize: both;  */
+  overflow: auto; 
+}
+
+.hidden-button {
+  display: none;
+}
+
+.copiedelement:hover {
+  border: 2px solid red;
+  transition: 0.3s;
+}
+
+.copiedelement:hover .hidden-button {
+  display: block;
+  transition: 0.3s;
+}
+
+
+.tooltip-delete {
+  border: none;
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  /* width: 80px; */
+  color: white;
+  font-size: 12px;
+  background-color: #f0f3f6;
+  border-radius: 5px;
+  padding: 10px;
+  cursor:pointer;
+}
+
+.tooltip-copy {
+  border: none;
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  /* width: 80px; */
+  color: white;
+  font-size: 12px;
+  background-color: #f0f3f6;
+  border-radius: 5px;
+  padding: 10px;
+  cursor:pointer;
+}
+
+.tooltip-copy img{
+  width: 20px
+}
+
+.tooltip-delete img{
+  width: 20px
+}
+
+.hover-text:hover .tooltip-delete{
+  visibility: visible;
+}
+
+.hover-text:hover .tooltip-copy {
+  visibility: visible;
+}
+
+#top {
+  top: -40px;
+  left: -50%;
+}
+
+#bottom {
+  top: 25px;
+  left: -50%;
+}
+
+#left {
+  top: -8px;
+  right: 120%;
+}
+#right {
+  top: -8px;
+  left: 120%;
+}
+
+#rightdelete{
+  top: 80px;
+  left:  69%;
+}
+#rightcopy{
+top: 80px;
+left: 80%;
+}
+
+.hover-text {
+  position: relative;
+  /* display: inline-block; */
+  /* margin: 40px; */
+  font-family: Arial;
+  text-align: center;
+}
